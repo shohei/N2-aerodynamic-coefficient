@@ -31,14 +31,16 @@
   13           SWEEP=0.,STA=1.,SSPAN=0.03,0.086,CHORD=0.048,0.01,                    
   14           ZUPPER=0.025,LMAXU=0.5,LFLATU=0.0,$                                   
   15 PART                                                                            
-  16 DAMP DB14                                                                       
-  17 PLOT                                                                            
-  18 PRESSURES                                                                       
-  19 SAVE                                                                            
-  20 NEXT CASE                                                                       
-  21  $TRIM SET=2.,$                                                                 
-  22 PRINT AERO TRIM PLOT                                                            
-  23 NEXT CASE                                                                       
+  16 DAMP DBODY                                                                      
+  17 DAMP DB1                                                                        
+  18 DAMP DB12                                                                       
+  19 PLOT                                                                            
+  20 PRESSURES                                                                       
+  21 SAVE                                                                            
+  22 NEXT CASE                                                                       
+  23  $TRIM SET=2.,$                                                                 
+  24 PRINT AERO TRIM PLOT                                                            
+  25 NEXT CASE                                                                       
 1         ***** THE USAF AUTOMATED MISSILE DATCOM * REV 3/99 *****     CASE   1
                AERODYNAMIC METHODS FOR MISSILE CONFIGURATIONS          PAGE   1
     CASE INPUTS
@@ -59,7 +61,9 @@
            SWEEP=0.,STA=1.,SSPAN=0.03,0.086,CHORD=0.048,0.01,                    
            ZUPPER=0.025,LMAXU=0.5,LFLATU=0.0,$                                   
  PART                                                                            
- DAMP DB14                                                                       
+ DAMP DBODY                                                                      
+ DAMP DB1                                                                        
+ DAMP DB12                                                                       
  PLOT                                                                            
  PRESSURES                                                                       
  SAVE                                                                            
